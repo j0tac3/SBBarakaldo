@@ -8,13 +8,10 @@
   "scripts": {
     "ng": "ng",
     "start": "nodemon server.js",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "lite": "lite-server",
-    "postinstall": "ng build --configuration production",
-    "heroku-postbuild": "npm run build"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {

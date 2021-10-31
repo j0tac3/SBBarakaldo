@@ -12,6 +12,7 @@
 
 .card__container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
 }
 .nosotros__card{
