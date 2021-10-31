@@ -1,0 +1,34 @@
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    font-size: 1.5rem;
+    background-color: var(--background-color-darkmode);
+    color: var(--color-sb-barakaldo-mode);
+    position: relative;
+    z-index: 999;
+}
+.sb__container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sb__title{
+    width: 10rem;
+}
+.sb__logo{
+    max-width: 5rem;
+}
+.menu__icon{
+    position: absolute;
+    right: 10px;
+    width: 2.5rem;
+    filter: invert(.5);
+}
+.menu__icon:hover{
+    cursor: pointer;
+}

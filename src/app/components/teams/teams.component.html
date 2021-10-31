@@ -1,0 +1,31 @@
+<div class="container">
+    <h2 class="title">Nuestros Equipos</h2>
+    <div class="teams__container">
+        <select name="" id="" class="team__select" (change)="optionChanged( $event )" [selectedIndex]='index'>
+            <option *ngFor="let team of teams, let i = index" [value]="i">{{ team.name }}</option>
+        </select>
+        <div class="team">
+            <h3 class="team__name">{{ currentTeam.name }}</h3>
+            <div class="main__image-container">
+                <img src="assets\media\images\teams\{{ currentTeam.main_image }}" alt="" class="team__main-img">
+                <button class="btn btn_before"
+                        (click)="toBeforeImage()"
+                        [disabled]="index === 0"><</button>
+                <button class="btn btn_next"
+                        (click)="toAfterImage()"
+                        [disabled]="index === teams.length">></button>
+            </div>
+            <figure class="images__gallery">
+                <img    src="assets\media\images\teams\{{ currentTeam.front_image }}" 
+                        alt="{{ currentTeam.name }} - Vista frontal" 
+                        class="img__miniature"
+                        (click)="changeMainImage(currentTeam, currentTeam.front_image)">
+                <img    src="assets\media\images\teams\{{ currentTeam.back_image }}" 
+                        alt="{{ currentTeam.name }} - Vista trasera" 
+                        class="img__miniature"
+                        (click)="changeMainImage(currentTeam, currentTeam.back_image)">
+            </figure>
+            <p class="desc">{{ currentTeam.desc }}</p>
+        </div>
+    </div>
+</div>

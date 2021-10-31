@@ -1,0 +1,32 @@
+.events__container{
+    overflow: hidden;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.event{
+    width: 100%;
+}
+.btn{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ffff;
+    border: none;
+    border-radius: 0;
+    padding: .5rem;
+    transition: color .3s, background-color .3s;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, .5);
+    color: black;
+}
+.btn__right{
+    right: 10px;
+}
+.btn__left{
+    left: 10px;
+}
+.check__container{
+    display: flex;
+    justify-content: center;
+}

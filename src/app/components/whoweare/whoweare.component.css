@@ -1,0 +1,29 @@
+.container{
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: .5rem;
+    color: #ccc;
+}
+.historia__text{
+    text-align: justify;
+    padding: 0 1rem;    
+}
+
+.card__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.nosotros__card{
+    margin: 0 .2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card_image{
+    max-width: 5rem;
+    margin-bottom: .5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0px 3px var(--color-sb-barakaldo-mode),
+                0 0 0px 6px black;
+}

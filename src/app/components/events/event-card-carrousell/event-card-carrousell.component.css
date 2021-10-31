@@ -1,0 +1,22 @@
+.card__container{
+    position: relative;
+    font-size: 18px;
+    width: 20rem;
+}
+.event__header{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    padding: .5rem;
+}
+.event__image{
+    max-height: 10rem;
+    object-fit: cover;
+    object-position: center;
+}
