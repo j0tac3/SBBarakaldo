@@ -1,6 +1,10 @@
 {
   "name": "mel-sb",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.6.2",
+    "npm": "7.16.0"
+  },
   "scripts": {
     "ng": "ng",
     "start": "node server.js",
@@ -9,7 +13,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "lite": "lite-server",
-    "postinstall": "ng build --configuration production"
+    "postinstall": "ng build --configuration production",
+    "heroku-postbuild": "npm run build"
   },
   "private": true,
   "dependencies": {
@@ -41,9 +46,5 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
     "typescript": "~4.3.5"
-  },
-  "engines": {
-    "node": "16.6.2",
-    "npm": "7.16.0"
   }
 }
