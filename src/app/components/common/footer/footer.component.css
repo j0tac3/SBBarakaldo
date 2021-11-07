@@ -28,6 +28,18 @@
     max-width: 3rem;
     height: 3rem;
 }
+.redes__enlace{
+    padding: 0.1rem;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid transparent;
+}
+.redes__enlace:hover{
+    border: 2px solid var(--color-sb-barakaldo-mode);
+}
 .options__list{
     list-style: none;
     padding: 0;
