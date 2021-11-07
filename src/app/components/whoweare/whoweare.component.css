@@ -9,6 +9,9 @@
     text-align: justify;
     padding: 0 1rem;    
 }
+.historia__img{
+    border-radius: 10px;
+}
 
 .card__container{
     display: flex;

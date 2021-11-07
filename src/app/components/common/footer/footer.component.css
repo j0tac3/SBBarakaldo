@@ -41,7 +41,9 @@
 .item__link{
     color: var(--color-sb-barakaldo-mode);
 }
-
+.guarida__info{
+    margin-top: 1rem;
+}
 
 @media screen and (max-width: 768px) {
     .footer{
