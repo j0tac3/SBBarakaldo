@@ -25,6 +25,7 @@
     max-width: 5rem;
 }
 .menu__icon{
+    display: none;
     position: absolute;
     right: 10px;
     top: 7rem;
