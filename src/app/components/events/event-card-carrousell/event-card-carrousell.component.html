@@ -1,9 +1,11 @@
-    <div class="card__container">
-        <img    src="assets\media\images\events\{{ event.image }}" 
-                    [alt]="event.title" 
-                    class="event__image">
-        <div class="event__header">
-            <span class="event__title">{{ event.title }}</span>
-            <span class="event__date">{{ event.date | date }}</span>
-        </div>
+<div class="card__container">
+    <img    src="assets\media\images\events\{{ event.image }}" 
+                [alt]="event.title" 
+                class="event__image">
+    <div class="event__header">
+        <span class="event__title">{{ event.title }}</span>
+        <span class="event__date">{{ event.date | date }}</span>
     </div>
+    <button class="btn btn__left" (click)="previousevent()"><</button>
+    <button class="btn btn__right" (click)="nextEvent()">></button>
+</div>

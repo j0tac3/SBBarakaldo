@@ -14,4 +14,16 @@ export class EventCardCarrousellComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  previousevent(){
+    /* if (this.index > 0)
+      this.index -= 1
+    this.currentEvent = this.events[this.index]; */
+  }
+  
+  nextEvent(){
+    /* if (this.index < this.events.length - 1 )
+      this.index += 1
+    this.currentEvent = this.events[this.index]; */
+  }
+
 }

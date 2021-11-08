@@ -1,6 +1,9 @@
 <div class="events__container">
     <h2 class="title">Ultimos Eventos</h2>
     <div class="events">
-        <app-event-carrousell [events]="events"></app-event-carrousell>
+        <app-event-card-carrousell
+            class="event" 
+            [event]="currentEvent">
+        </app-event-card-carrousell>
     </div>
 </div>

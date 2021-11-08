@@ -29,5 +29,4 @@ export class EventCarrousellComponent implements OnInit {
     this.currentEvent = this.events[this.index];
   }
 
-
 }

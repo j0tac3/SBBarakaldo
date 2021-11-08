@@ -10,11 +10,14 @@ export class EventsComponent implements OnInit {
   public events : EventModel[] = [];
 
   public showInfoState : boolean = false;
+  public currentEvent! : EventModel;
+  private index = 0;
 
   constructor() { }
 
   ngOnInit(): void {
     this.fillEvents();
+    this.currentEvent =  this.events[0];
   }
 
   fillEvents(){

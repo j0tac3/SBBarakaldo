@@ -24,6 +24,10 @@
     flex-direction: column;
     align-items: center;
 }
+.historia__img{
+    border-radius: 5px;
+    border: 2px solid var(--color-sb-barakaldo-mode);
+}
 .card_image{
     max-width: 5rem;
     margin-bottom: .5rem;
