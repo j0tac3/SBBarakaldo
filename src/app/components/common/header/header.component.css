@@ -63,7 +63,7 @@
     /*border-bottom: 2px solid var(--color-sb-barakaldo-mode);*/
 }
 .active{
-    color: #fff;
+    color: var(--background-color-darkmode);
     background-color: var(--color-sb-barakaldo-mode);
 }
 

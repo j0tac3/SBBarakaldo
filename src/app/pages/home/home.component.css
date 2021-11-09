@@ -6,13 +6,13 @@
     background-position-y: center;
     background-attachment: fixed; */
 
-    background-color: #555;
+    /* background-color: #555; */
     position: relative;
 }
 .back{
     position: fixed;
     z-index: 111;
-    opacity: .1;
+    opacity: .07;
 }
 .components{
     z-index: 999;

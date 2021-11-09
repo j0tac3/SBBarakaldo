@@ -13,6 +13,7 @@ import { CalendarComponent } from './components/events/calendar/calendar.compone
 import { EventCardComponent } from './components/events/event-card/event-card.component';
 import { EventCardCarrousellComponent } from './components/events/event-card-carrousell/event-card-carrousell.component';
 import { EventCarrousellComponent } from './components/events/event-carrousell/event-carrousell.component';
+import { EventosComponent } from './pages/eventos/eventos.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { EventCarrousellComponent } from './components/events/event-carrousell/e
     CalendarComponent,
     EventCardComponent,
     EventCardCarrousellComponent,
-    EventCarrousellComponent
+    EventCarrousellComponent,
+    EventosComponent
   ],
   imports: [
     BrowserModule,

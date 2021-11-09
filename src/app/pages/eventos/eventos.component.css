@@ -1,0 +1,17 @@
+.events__container{
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+.events{
+    display: grid;
+    grid-gap: .5rem;
+    grid-template-columns: 1fr;
+    margin-bottom: 1rem;
+}
+@media screen and (min-width : 768px) {
+    .events{
+        grid-template-columns: 1fr 1fr;
+    }
+}

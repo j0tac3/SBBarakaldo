@@ -1,5 +1,5 @@
 <div class="events__container">
-    <h2 class="title">Ultimas Noticias</h2>
+    <h2 class="title">Noticias</h2>
     <div class="events">
         <!-- <app-event-card-carrousell
             class="event" 
@@ -7,5 +7,4 @@
         </app-event-card-carrousell> -->
         <app-event-card *ngFor="let event of events" [event]="event"></app-event-card>
     </div>
-    <a [routerLink]="'/eventos'" class="enlace">Ver todos ...</a>
 </div>
