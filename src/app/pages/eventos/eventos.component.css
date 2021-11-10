@@ -4,14 +4,25 @@
     margin: 0 auto;
     padding: 0.5rem;
 }
+.las__events{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 1rem;
+    position: relative;
+}
 .events{
     display: grid;
-    grid-gap: .5rem;
-    grid-template-columns: 1fr;
-    margin-bottom: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
 }
-@media screen and (min-width : 768px) {
+@media screen and (max-width : 768px) {
+    .las__events{
+        display: grid;
+        grid-gap: .5rem;
+    }
     .events{
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }

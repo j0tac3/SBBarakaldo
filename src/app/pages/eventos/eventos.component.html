@@ -1,10 +1,13 @@
 <div class="events__container">
     <h2 class="title">Noticias</h2>
-    <div class="events">
+    <div class="las__events">
         <!-- <app-event-card-carrousell
             class="event" 
             [event]="currentEvent">
         </app-event-card-carrousell> -->
-        <app-event-card *ngFor="let event of events" [event]="event"></app-event-card>
+        <app-event-card *ngFor="let event of lasEvents" [event]="event"></app-event-card>
+    </div>
+    <div class="events">
+        <app-events *ngFor="let event of otherEvents" [event]="event"></app-events>
     </div>
 </div>

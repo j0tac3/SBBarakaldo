@@ -1,11 +1,18 @@
-<div class="events__container">
-    <h2 class="title">Ultimas Noticias</h2>
-    <div class="events">
-        <!-- <app-event-card-carrousell
-            class="event" 
-            [event]="currentEvent">
-        </app-event-card-carrousell> -->
-        <app-event-card *ngFor="let event of events" [event]="event"></app-event-card>
+<div class="event">
+    <img    src="assets\media\images\events\{{ event.image }}" 
+                [alt]="event.title" 
+                class="event__image">
+    <div    class="event__body"
+            [hidden]="!event.expanded">
+        <div class="event__header">
+            <span class="event__title">{{ event.title }}</span>
+            <div class="event__calendar">
+                <img    src="assets\media\images\icons\calendar.svg" 
+                        alt=""
+                        class="calendar__icon">
+                <span class="event__date">{{ event.date }}</span>
+            </div>
+        </div>
+        <p class="event__desc">{{ event.desc }}</p>
     </div>
-    <a [routerLink]="'/eventos'" class="enlace">Ver todos ...</a>
 </div>
