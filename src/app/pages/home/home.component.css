@@ -9,11 +9,6 @@
     /* background-color: #555; */
     position: relative;
 }
-.back{
-    position: fixed;
-    z-index: 111;
-    opacity: .07;
-}
 .components{
     z-index: 999;
 }

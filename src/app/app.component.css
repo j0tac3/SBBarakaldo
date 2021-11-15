@@ -1,0 +1,39 @@
+.container{
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+}
+.header{
+    align-self: flex-start;
+}
+.footer{
+    align-self: flex-end;
+}
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.back{
+    position: fixed;
+    top: 11rem;
+    z-index: -1;
+    opacity: .2;
+    max-width: 30rem;
+    object-fit: cover;
+    object-position: center;
+}
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    width: 100vw;
+    background-image: url('../assets/media/images/icons_logo/logo.png');
+    background-position: center 10rem;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: .2;
+    z-index: -1;
+}

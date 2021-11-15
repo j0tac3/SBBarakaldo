@@ -9,15 +9,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
-    margin-bottom: 1rem;
     position: relative;
+    height: 30rem;
 }
 .events{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
 }
-@media screen and (max-width : 768px) {
+@media screen and (max-width : 767px) {
     .las__events{
         display: grid;
         grid-gap: .5rem;

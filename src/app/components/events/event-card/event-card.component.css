@@ -14,6 +14,16 @@
     height: 25rem;
     object-fit: cover;
     object-position: center;
+    transition: height .3s;
+}
+.event:hover{
+    cursor: pointer;
+    border-bottom: 5px solid var(--color-sb-barakaldo-mode);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.event:hover .event__image{
+    height: 26rem;
 }
 .event__body{
     height: 100%;

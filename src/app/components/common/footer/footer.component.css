@@ -2,7 +2,8 @@
     padding: 1rem;
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     border-top: 1px solid #7777;
 
@@ -18,8 +19,12 @@
 }
 .direccion{
     margin: 0;
+    text-align: center;
 }
 .redes{
+    list-style: none;
+    padding: 0;
+    margin: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -56,15 +61,26 @@
 .guarida__info{
     margin-top: 1rem;
 }
+.paginas{
+    margin: 0;
+    padding: 0;
+    list-style: square;
+}
+.pagina{
+    margin-bottom: .5rem;
+}
+.pagina__enlace{
+    color: var(--color-sb-barakaldo-mode);
+    text-decoration: none;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     .footer{
-        display: flex;
-        flex-direction: column;
+        grid-template-columns: 1fr;
         align-items: center;
     }
     .section{
-        width: 90%;
+        width: 100%;
         padding-bottom: 1rem;
     }
     .section:not(:last-child){
