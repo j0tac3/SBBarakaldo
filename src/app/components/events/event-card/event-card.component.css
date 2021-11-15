@@ -4,26 +4,31 @@
     flex-direction: column;
     background-color: #fff;
     color: var(--background-color-darkmode);
-    box-shadow: 5px 5px 10px -5px #7777;
+    box-shadow: 5px 5px 10px -5px #777;
     border-radius: 5px;
+
     overflow: hidden;
     margin: 0 0.2rem;
     position: relative;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border-bottom: 5px solid var(--color-sb-barakaldo-mode);
+    transition: transform .3s, border-radius .3s;
+    transform: translateY(-50px); */
+}
+.event:hover{
+    cursor: pointer;
+    transform: translateY(0);
 }
 .event__image{
     height: 25rem;
     object-fit: cover;
     object-position: center;
-    transition: height .3s;
-}
-.event:hover{
-    cursor: pointer;
-    border-bottom: 5px solid var(--color-sb-barakaldo-mode);
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    transition: height .5s;
 }
 .event:hover .event__image{
-    height: 26rem;
+  /*   height: 27rem; */
 }
 .event__body{
     height: 100%;
@@ -41,6 +46,7 @@
                     rgba(0,0,0,0) 0%, 
                     rgba(0,0,0,0) 50%, 
                     rgba(0,0,0,1) 100%);
+    transition: background .3s;
 }
 .event__header{
     width: 100%;
@@ -51,6 +57,8 @@
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     font-weight: bold;
+
+    transition: height .4s, grid-gap .4s;
 }
 .event__calendar{    
     display: flex;
@@ -65,9 +73,26 @@
 }
 .event__desc{
     width: 80%;
-    text-align: justify;
-    overflow-y: auto;
+    text-align: left;
     margin-bottom: 0.3rem;
+
+    transition: height 1s, color .5s;
+    height: 0;
+    color: transparent;
+}
+.event:hover .event__desc{
+    color: inherit;
+    height: 10rem;
+}
+.event:hover .event__body{
+    background:  linear-gradient(180deg, 
+                rgba(0,0,0,0) 0%, 
+                rgba(0,0,0,0) 0%, 
+                rgba(0,0,0,1) 100%);
+}
+.event:hover .event__header{
+    height: 3rem;
+    grid-gap: .5rem;
 }
 .card__active{
     position: absolute;
@@ -79,8 +104,20 @@
 @media screen and (max-width: 766px) {
     .event{
         width: 80vw;
-    } 
+
+        border-radius: 5px;
+        border-bottom: none;
+        transition: transform .3s, border-radius .3s;
+        transform: translateY(0);
+        margin-bottom: 1rem;
+    }
+    .event:hover{
+        transform: scale(1.1)
+    }
     .event__image{
         height: 10rem;
+    }
+    .event:hover .event__image{
+        /* height: 12rem; */
     }
 }
