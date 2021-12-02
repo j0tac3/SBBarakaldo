@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { EventModel } from 'src/app/Models/event.model';
 
 @Component({
@@ -8,14 +8,14 @@ import { EventModel } from 'src/app/Models/event.model';
 })
 export class EventCardComponent implements OnInit {
   @Input() event! : EventModel;
+  @Output() eventSelected = new EventEmitter<EventModel>();
 
   constructor() { }
 
   ngOnInit(): void {
-    this.event.expanded = true;
   }
 
-  showInfo( event : any ){
-    event.expanded = !event.expanded;
+  onEventSelected( event : any ){
+    this.eventSelected.emit(event);
   }
 }

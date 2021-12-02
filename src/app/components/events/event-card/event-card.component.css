@@ -1,5 +1,5 @@
 .event{
-    width: 10rem;
+    /* width: 9rem; */
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -103,6 +103,7 @@
 
 @media screen and (max-width: 766px) {
     .event{
+        margin: 0 auto;
         width: 80vw;
 
         border-radius: 5px;
@@ -112,7 +113,7 @@
         margin-bottom: 1rem;
     }
     .event:hover{
-        transform: scale(1.1)
+        /* transform: scale(1.1) */
     }
     .event__image{
         height: 10rem;

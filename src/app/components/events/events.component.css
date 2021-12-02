@@ -1,15 +1,23 @@
 .event{
-    height: 10rem;
+    /* height: 10rem; */
     position: relative;
     display: grid;
+    align-items: center;
     grid-gap: 1rem;
     grid-template-columns: 1fr 1fr;
 
     box-shadow: 0px 0px 15px -10px #777;
     overflow: hidden;
+
+    transition: transform .3s;
+}
+.event:hover{
+    cursor: pointer;
+    transform: translateY(-5px);
 }
 .event__image{
     height: 100%;
+    max-height: 11rem;
     object-fit: cover;
     object-position: center;
 }

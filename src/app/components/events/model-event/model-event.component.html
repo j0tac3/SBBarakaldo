@@ -1,0 +1,22 @@
+<div class="event">
+    <div class="event__header">
+        <img src="assets\media\images\icons\close.svg" alt="" class="icon__close" (click)="onCloseModal()">
+        <img src="assets\media\images\events\{{ event.image }}" alt="" class="event__image">
+    </div>
+    <div class="event__body">
+        <h2 class="event__title">{{ event.title }}</h2>
+        <div class="event__date">
+            <span class="event_calendar">
+                <img src="assets\media\images\icons\calendar_start.svg" alt="" class="calendar__icon">
+                {{ event.start }}
+            </span>
+            <span class="event_calendar">
+                <img src="assets\media\images\icons\calendar_end.svg" alt="" class="calendar__icon">
+                {{ event.end }}
+            </span>
+        </div>
+        <p class="event__desc">{{ event.description }}</p>
+        <span class="event__finalized"
+                *ngIf="event.finalized">Evento Finalizado</span>
+    </div>        
+</div>

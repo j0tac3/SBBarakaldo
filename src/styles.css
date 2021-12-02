@@ -8,6 +8,8 @@ body{
     display: flex;
     justify-content: center;
     position: relative;
+    width: 100vw;
+    overflow-x: hidden;
 }
 img{
     width: 100%;

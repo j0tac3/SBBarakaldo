@@ -1,18 +1,18 @@
-<div class="event">
+<div class="event"
+        (click)="onEventSelected(event)">
     <img    src="assets\media\images\events\{{ event.image }}" 
                 [alt]="event.title" 
                 class="event__image">
-    <div    class="event__body"
-            [hidden]="!event.expanded">
+    <div    class="event__body">
         <div class="event__header">
             <span class="event__title">{{ event.title }}</span>
             <div class="event__calendar">
                 <img    src="assets\media\images\icons\calendar.svg" 
                         alt=""
                         class="calendar__icon">
-                <span class="event__date">{{ event.date }}</span>
+                <span class="event__date">{{ event.start }}</span>
             </div>
         </div>
-        <p class="event__desc">{{ event.desc }}</p>
+        <p class="event__desc">{{ event.sumary }}</p>
     </div>
 </div>

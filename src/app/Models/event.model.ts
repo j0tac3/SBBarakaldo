@@ -1,20 +1,23 @@
 export class EventModel {
-    date? : string;
-    title? : string;
+    id? : number;
     image? : string;
-    desc? : string;
-    expanded? : boolean;
+    title? : string;
+    description? : string;
+    sumary? : string;
+    start? : string;
+    end? : string;
+    published? : boolean;
+    finalized? : boolean;
 
-
-/*     constructor() {
-        
-    }
- */
-    constructor(date? : string, title? : string, image? : string, desc? : string, expanded? : boolean) {
-        this.date = date;
-        this.title = title;
+    constructor(id? : number, image? : string, title? : string, description? : string, sumary? : string, start? : string, end? : string, published? : boolean, finalized? : boolean) {
+        this.id = id;
         this.image = image;
-        this.desc = desc;
-        this.expanded = expanded;
+        this.title = title;
+        this.description = description;
+        this.sumary = sumary;
+        this.start = start;
+        this.end = end;
+        this.published = published;
+        this.finalized = finalized;
     }
 }

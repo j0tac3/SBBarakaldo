@@ -8,9 +8,10 @@
     border-top: 1px solid #7777;
 
     background-color: var(--background-color-darkmode);
-    color: var(--color-sb-barakaldo-mode);
+    /* color: var(--color-sb-barakaldo-mode); */
+    color: #fff;
     position: relative;
-    z-index: 999;
+    z-index: 1;
 }
 .section{
     display: flex;
@@ -20,6 +21,10 @@
 .direccion{
     margin: 0;
     text-align: center;
+}
+.title{
+    /* color: var(--color-sb-barakaldo-mode); */
+    color: #fff;
 }
 .redes{
     list-style: none;
@@ -56,7 +61,8 @@
     margin: 0 .5rem;
 }
 .item__link{
-    color: var(--color-sb-barakaldo-mode);
+    /* color: var(--color-sb-barakaldo-mode); */
+    color: #fff;
 }
 .guarida__info{
     margin-top: 1rem;
@@ -70,7 +76,8 @@
     margin-bottom: .5rem;
 }
 .pagina__enlace{
-    color: var(--color-sb-barakaldo-mode);
+    /* color: var(--color-sb-barakaldo-mode); */
+    color: #fff;
     text-decoration: none;
 }
 .footer__image{
@@ -78,7 +85,7 @@
     top: 0;
     object-fit: cover;
     object-position: center;
-    opacity: .5;
+    opacity: .3;
     z-index: -1;
     height: 100%;
 }

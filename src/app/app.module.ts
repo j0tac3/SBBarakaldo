@@ -14,6 +14,9 @@ import { EventCardCarrousellComponent } from './components/events/event-card-car
 import { EventCarrousellComponent } from './components/events/event-carrousell/event-carrousell.component';
 import { EventosComponent } from './pages/eventos/eventos.component';
 import { WhoWeAreComponent } from './pages/who-we-are/who-we-are.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ModelEventComponent } from './components/events/model-event/model-event.component';
+import { MainMenuComponent } from './components/common/main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +31,14 @@ import { WhoWeAreComponent } from './pages/who-we-are/who-we-are.component';
     EventCardCarrousellComponent,
     EventCarrousellComponent,
     EventosComponent,
-    WhoWeAreComponent
+    WhoWeAreComponent,
+    ModelEventComponent,
+    MainMenuComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

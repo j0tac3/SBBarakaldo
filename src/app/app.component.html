@@ -1,9 +1,13 @@
 <div class="container">
+    <div class="menu__back"></div>
+    <app-main-menu class="main__menu"></app-main-menu>
     <app-header class="header"></app-header>
-   <div class="content">
-        <router-outlet></router-outlet>
+    <div class="content">
+        <div class="component">
+                <router-outlet></router-outlet>
+        </div>
         <!-- <div class="background"></div> -->
-        <img src="assets\media\images\icons_logo\logo.png" alt="" class="back">
-   </div>
+        <!-- <img src="assets\media\images\icons_logo\logo.png" alt="" class="back"> -->
+    </div>
     <app-footer class="footer"></app-footer>
 </div>

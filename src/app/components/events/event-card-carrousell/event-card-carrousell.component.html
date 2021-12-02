@@ -4,7 +4,7 @@
                 class="event__image">
     <div class="event__header">
         <span class="event__title">{{ event.title }}</span>
-        <span class="event__date">{{ event.date | date }}</span>
+        <span class="event__date">{{ event.start | date }}</span>
     </div>
     <button class="btn btn__left" (click)="previousevent()"><</button>
     <button class="btn btn__right" (click)="nextEvent()">></button>
