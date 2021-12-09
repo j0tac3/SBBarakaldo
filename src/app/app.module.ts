@@ -17,6 +17,7 @@ import { WhoWeAreComponent } from './pages/who-we-are/who-we-are.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ModelEventComponent } from './components/events/model-event/model-event.component';
 import { MainMenuComponent } from './components/common/main-menu/main-menu.component';
+import { CreateEventsComponent } from './pages/create-events/create-events.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +35,7 @@ import { MainMenuComponent } from './components/common/main-menu/main-menu.compo
     WhoWeAreComponent,
     ModelEventComponent,
     MainMenuComponent,
+    CreateEventsComponent,
   ],
   imports: [
     BrowserModule,

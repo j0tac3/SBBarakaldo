@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.css']
 })
 export class MainMenuComponent implements OnInit {
+  public showSubMenu = false;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onShowSubMenu(){
+    this.showSubMenu = !this.showSubMenu;
   }
 
 }

@@ -26,8 +26,9 @@
     display: grid;
 }
 .event__header{
-    display: grid;
+    display: flex;
     justify-content: center;
+    flex-direction: column;
 }
 .event__title{
     text-align: center;
@@ -35,6 +36,12 @@
     font-weight: bold;
 }
 .event__calendar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem 0;
+}
+.calendar__date{
     display: flex;
     align-items: center;
 }

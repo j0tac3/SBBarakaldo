@@ -1,7 +1,16 @@
 <nav class="main__menu__container">
     <ul class="main__menu">
         <li class="menu__item" [routerLink]="'home'" routerLinkActive="active">Inicio</li>
-        <li class="menu__item" [routerLink]="'eventos'" routerLinkActive="active">Eventos</li>
+        <!-- <li class="menu__item" [routerLink]="'eventos'" routerLinkActive="active"> -->
+        <li class="menu__item" routerLinkActive="active">
+            Eventos
+            <!-- <ul class="sub__menu" [class.sub__menu--visible]='showSubMenu'> -->
+            <ul class="sub__menu">
+                <li class="sub__menu--item" [routerLink]="'eventos'">Ver eventos</li>
+                <li class="sub__menu--item">Administrar</li>
+                <li class="sub__menu--item" [routerLink]="'nuevoEvento'">Crear</li>
+            </ul>
+        </li>
         <li class="menu__item" [routerLink]="'nosotros'" routerLinkActive="active">Nosotros</li>
         <!-- <li class="menu__item" [routerLink]="'galeria'" routerLinkActive="active">Galería</li> -->
     </ul>

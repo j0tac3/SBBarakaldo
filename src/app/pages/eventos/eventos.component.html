@@ -4,10 +4,6 @@
         <app-model-event [event]="currentEvent" (closeModal)="onCloseModal()"></app-model-event>
     </div>
     <div class="las__events">
-        <!-- <app-event-card-carrousell
-            class="event" 
-            [event]="currentEvent">
-        </app-event-card-carrousell> -->
         <app-event-card *ngFor="let event of lasEvents" [event]="event" (eventSelected)="onSelectEvent($event)"></app-event-card>
     </div>
     <div class="events">

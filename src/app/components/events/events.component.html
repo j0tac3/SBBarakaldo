@@ -7,10 +7,18 @@
         <div class="event__header">
             <span class="event__title">{{ event.title }}</span>
             <div class="event__calendar">
-                <img    src="assets\media\images\icons\calendar.svg" 
-                        alt=""
-                        class="calendar__icon">
-                <span class="event__date">{{ event.start }}</span>
+                <div class="calendar__date">
+                    <img    src="assets\media\images\icons\calendar_start.svg" 
+                            alt=""
+                            class="calendar__icon">
+                    <span class="event__date">{{ event.start }}</span>
+                </div>
+                <div class="calendar__date">
+                    <img    src="assets\media\images\icons\calendar_end.svg" 
+                            alt=""
+                            class="calendar__icon">
+                    <span class="event__date">{{ event.end }}</span>
+                </div>
             </div>
         </div>
         <p class="event__desc">{{ event.sumary }}</p>

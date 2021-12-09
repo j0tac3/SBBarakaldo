@@ -31,30 +31,7 @@
     height: 3rem;
     background-color: var(--background-color-darkmode);
 }
-.back{
-    position: fixed;
-    top: 11rem;
-    z-index: 1;
-    opacity: .2;
-    max-width: 30rem;
-    object-fit: cover;
-    object-position: center;
-}
-/* .background{
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 100%;
-    width: 100vw;
-    background-image: url('../assets/media/images/icons_logo/logo.png');
-    background-position: center 10rem;
-    background-attachment: fixed;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: .2;
-    z-index: 1;
-} */
 .component{
     z-index: 2;
-    box-shadow: 0px 0px 10px -5px #777;
+   /*  box-shadow: 0px 0px 10px -5px #777; */
 }

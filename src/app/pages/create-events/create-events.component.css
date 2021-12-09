@@ -1,0 +1,22 @@
+.form__element{
+    display: grid;
+    margin-bottom: 1rem;
+}
+.evento__label{
+    margin-bottom: 1rem;
+    color: #777;
+}
+.evento__title{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #777;
+    background-color: transparent;
+}
+.evento__fecha{
+    color: #777;
+}
+.evento__textarea{
+    resize: none;
+    outline: none;
+    border: 1px solid #777;
+}

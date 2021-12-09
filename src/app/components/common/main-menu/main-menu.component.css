@@ -21,15 +21,43 @@
 }
 .menu__item{
     color: var(--color-sb-barakaldo-mode);
-    padding: 0.2rem 0.6rem;
-    border-radius: 3px;
+    padding: 0 .5rem;
+    position: relative;
+}
+.menu__item:not(:last-child){
+    margin-right: 1rem;
 }
 .menu__item:hover{
     cursor: pointer;
 }
 .active{
+    border-bottom: 2px solid var(--color-sb-barakaldo-mode);
+}
+
+.sub__menu{
+    position: absolute;
+    margin: 0;
+    left: 0;
+    list-style: none;
+    margin-top: .5rem;
+    background-color: rgba(255, 255, 255, .8);
     color: var(--background-color-darkmode);
-    background-color: var(--color-sb-barakaldo-mode);
+    border-radius: 5px;
+    transition: height .3s, padding .3s;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.menu__item:hover .sub__menu{
+    height: 5.5rem;
+    padding: 0 1rem .5rem 1rem;
+}
+.sub__menu--visible{
+    height: 4rem;
+    padding: 0 1rem .5rem 1rem;
+}
+.sub__menu--item{
+    margin-top: .5rem;
 }
 
 @media screen and (min-width: 766px) {
