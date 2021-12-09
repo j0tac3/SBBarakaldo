@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ModelEventComponent } from './components/events/model-event/model-event.component';
 import { MainMenuComponent } from './components/common/main-menu/main-menu.component';
 import { CreateEventsComponent } from './pages/create-events/create-events.component';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,9 @@ import { CreateEventsComponent } from './pages/create-events/create-events.compo
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

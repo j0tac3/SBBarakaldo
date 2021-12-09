@@ -20,3 +20,8 @@
     outline: none;
     border: 1px solid #777;
 }
+.form__element--checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
